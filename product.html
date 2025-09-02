@@ -13,182 +13,194 @@
 <body>
     <header class="header ">
         <img src="./assets/logo.png" alt="logo" class="logo">
+        <button class="exist-btn">Exist</button>
     </header>
     <div class="container">
         <div class="main">
             <div class="product-content">
                 <h1>Bitte wählen Sie Ihre gewünschte Verpflegung:</h1>
-                <h4>Total-Betrag: CHF 54.00</h4>
-            </div>
-
-            <div class="product-cards">
-
-                <div class="product-card">
-                    <div class="product-card-logo">
-                        <img src="./assets/product-card-1.svg" alt="card-1">
-                    </div>
-                    <div class="product-card-content">
-
-                        <h3>Tagespauschale mit <br> Mittagessen</h3>
-                        <h4>CHF 27.00</h4>
-                        <div class="product-card-wrapper">
-                            <div class="badges">
-                                <div class="badge active" onclick="setTab(this)">Veg</div>
-                                <div class="badge" onclick="setTab(this)">Nicht-veg</div>
-                            </div>
-                            <div class="controls">
-                                <button class="btn" onclick="decrease(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
-                                        fill="none">
-                                        <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <div class="count">2</div>
-                                <button class="btn" onclick="increase(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                        fill="none">
-                                        <path d="M2 11L20 11" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M11 2L11 20" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-logo">
-                        <img src="./assets/product-card-2.svg" alt="card-1">
-                    </div>
-                    <div class="product-card-content">
-
-                        <h3>Tagespauschale mit <br> Mittagessen</h3>
-                        <h4>CHF 27.00</h4>
-                        <div class="product-card-wrapper">
-                            <div class="badges">
-                                <div class="badge active" onclick="setTab(this)">Veg</div>
-                                <div class="badge" onclick="setTab(this)">Nicht-veg</div>
-                            </div>
-                            <div class="controls">
-                                <button class="btn" onclick="decrease(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
-                                        fill="none">
-                                        <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <div class="count">2</div>
-                                <button class="btn" onclick="increase(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                        fill="none">
-                                        <path d="M2 11L20 11" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M11 2L11 20" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-logo">
-                        <img src="./assets/product-card-3.svg" alt="card-1">
-                    </div>
-                    <div class="product-card-content">
-
-                        <h3>Tagespauschale mit <br> Mittagessen</h3>
-                        <h4>CHF 27.00</h4>
-                        <div class="product-card-wrapper">
-                            <div class="badges">
-                                <div class="badge active" onclick="setTab(this)">Veg</div>
-                                <div class="badge" onclick="setTab(this)">Nicht-veg</div>
-                            </div>
-                            <div class="controls">
-                                <button class="btn" onclick="decrease(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
-                                        fill="none">
-                                        <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <div class="count">2</div>
-                                <button class="btn" onclick="increase(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                        fill="none">
-                                        <path d="M2 11L20 11" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M11 2L11 20" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-card-logo">
-                        <img src="./assets/product-card-4.svg" alt="card-1">
-                    </div>
-                    <div class="product-card-content">
-
-                        <h3>Tagespauschale mit <br> Mittagessen</h3>
-                        <h4>CHF 27.00</h4>
-                        <div class="product-card-wrapper">
-                            <div class="badges">
-                                <div class="badge active" onclick="setTab(this)">Veg</div>
-                                <div class="badge" onclick="setTab(this)">Nicht-veg</div>
-                            </div>
-                            <div class="controls">
-                                <button class="btn" onclick="decrease(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
-                                        fill="none">
-                                        <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <div class="count">2</div>
-                                <button class="btn" onclick="increase(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                                        fill="none">
-                                        <path d="M2 11L20 11" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M11 2L11 20" stroke="white" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
 
             </div>
-            <h2 class="heading-2">Wählen Sie Ihre Zahlungsmethode</h2>
-            <div class="product-btns">
-                <div class="btns">
-                    <button class="button outline">
-                        <img src="./assets/btn-1.png" alt="btn-1">
-                        Karte
-                    </button>
-                    <button class="button">
-                        <img src="./assets/btn-2.png" alt="btn-2">
-                        Twint
-                    </button>
-                </div>
-                <a href="./payment.html">
-                    <button class="sm-btn outline button">Abbrechen</button>
+            <div class="product-cards-container">
+                <div class="product-cards">
+                    <div class="product-card">
+                        <h3>Tagespauschale mit Mittagessen</h3>
+                        <div class="product-card-content">
+                            <div class="product-card-logo-wrapper">
+                                <div class="product-card-logo text-logo">
+                                    <h5>Reis mit Curry und <br> Poulet</h5>
+                                </div>
+                                <h4>CHF 27.00</h4>
+                            </div>
+                            <div class="product-card-wrapper">
+                                <div class="badges">
+                                    <div class="badge active" onclick="setTab(this)">Veg</div>
+                                    <div class="badge" onclick="setTab(this)">Nicht-veg</div>
+                                </div>
+                                <div class="controls">
+                                    <button class="btn" onclick="decrease(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
+                                            fill="none">
+                                            <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="count">2</div>
+                                    <button class="btn" onclick="increase(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <path d="M2 11L20 11" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11 2L11 20" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <h3>Tagespauschale mit Mittagessen</h3>
+                        <div class="product-card-content">
+                            <div class="product-card-logo-wrapper">
+                                <div class="product-card-logo">
+                                    <img src="./assets/product-card-2.svg" alt="card-1">
+                                </div>
+                                <h4>CHF 27.00</h4>
+                            </div>
 
-                </a>
+
+
+                            <div class="product-card-wrapper">
+                                <div class="badges">
+                                    <div class="badge active" onclick="setTab(this)">Veg</div>
+                                    <div class="badge" onclick="setTab(this)">Nicht-veg</div>
+                                </div>
+                                <div class="controls">
+                                    <button class="btn" onclick="decrease(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
+                                            fill="none">
+                                            <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="count">2</div>
+                                    <button class="btn" onclick="increase(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <path d="M2 11L20 11" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11 2L11 20" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <h3>Tagespauschale mit Mittagessen</h3>
+                        <div class="product-card-content">
+                            <div class="product-card-logo-wrapper">
+                                <div class="product-card-logo text-logo">
+                                    <h5>Wiener Schnitzel mlt <br> Pommes Frittes und <br> Kaetoffelsalat</h5>
+                                </div>
+                                <h4>CHF 27.00</h4>
+
+                            </div>
+                            <div class="product-card-wrapper">
+                                <div class="badges">
+                                    <div class="badge active" onclick="setTab(this)">Veg</div>
+                                    <div class="badge" onclick="setTab(this)">Nicht-veg</div>
+                                </div>
+                                <div class="controls">
+                                    <button class="btn" onclick="decrease(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
+                                            fill="none">
+                                            <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="count">2</div>
+                                    <button class="btn" onclick="increase(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <path d="M2 11L20 11" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11 2L11 20" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <h3>Tagespauschale mit Mittagessen</h3>
+                        <div class="product-card-content">
+                            <div class="product-card-logo-wrapper">
+                                <div class="product-card-logo">
+                                    <img src="./assets/product-card-4.svg" alt="card-1">
+                                </div>
+                                <h4>CHF 27.00</h4>
+                            </div>
+
+                            <div class="product-card-wrapper">
+                                <div class="badges">
+                                    <div class="badge active" onclick="setTab(this)">Veg</div>
+                                    <div class="badge" onclick="setTab(this)">Nicht-veg</div>
+                                </div>
+                                <div class="controls">
+                                    <button class="btn" onclick="decrease(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4"
+                                            fill="none">
+                                            <path d="M2 2L20 2" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="count">2</div>
+                                    <button class="btn" onclick="increase(this)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 22 22" fill="none">
+                                            <path d="M2 11L20 11" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11 2L11 20" stroke="white" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h2 class="heading-2 heading-light"> Total-Betrag: <br> <b>CHF 54.00</b>
+                    </h2>
+                    <p>lm Warenkorb: 2 x Tagespauschale ohne Mittagessen</p>
+                    <h2 class="heading-2 heading-3">Wählen Sie Ihre Zahlungsmethode</h2>
+                    <div class="product-btns">
+                        <div class="btns">
+                            <button class="button outline">
+                                <img src="./assets/btn-1.png" alt="btn-1">
+                                Karte
+                            </button>
+                            <button class="button">
+                                <img src="./assets/btn-2.png" alt="btn-2">
+                                Twint
+                            </button>
+                        </div>
+                        <a href="./payment.html">
+                            <button class="sm-btn outline button">Abbrechen</button>
+
+                        </a>
+                    </div>
+                </div>
+
             </div>
+
+
         </div>
     </div>
-
-
-
     <script src="script.js"></script>
 </body>
 

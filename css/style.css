@@ -13,12 +13,35 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+    width: 100%;
 
     img {
         width: 150px;
     }
 
+}
+
+.exist-btn {
+    background-color: #FF2121;
+    color: white;
+    outline: none;
+    border: none;
+    height: 50px;
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 64px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 32px;
 }
 
 .main {
@@ -167,7 +190,7 @@
 
 .product-btns {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     margin-right: 64px;
     margin: 64px 0;
@@ -175,6 +198,7 @@
     button {
         margin-top: 0 !important;
         width: 240px;
+        margin-bottom: 24px;
     }
 
     .sm-btn {
@@ -184,8 +208,7 @@
 
 .btns {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    flex-direction: column;
 
     button {
         margin-top: 0 !important;
@@ -210,25 +233,76 @@
     }
 }
 
-.product-cards {
+.product-cards-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 64px;
+
+
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 80px;
     margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 24px;
 }
 
 .product-card {
-    height: 460px;
-    width: 400px;
+    height: 360px;
+    width: 580px;
     border: 1px solid #00000066;
 
+    h3 {
+        padding: 24px;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 0;
+    }
+
+    h4 {
+        font-size: 48px !important;
+        font-weight: 700;
+        color: #01A7B9 !important;
+    }
+
+    .product-card-logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .text-logo {
+        border: none !important;
+    }
 
     .product-card-logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid #00000066;
+        border: 1px solid #00000066;
+        width: 235px;
+        height: 136px;
+
+
+        img {
+            width: 235px;
+            height: 136px;
+        }
+
+
+        h5 {
+            font-size: 24px;
+            color: #EE135D;
+            font-weight: 700;
+        }
     }
 
     .product-card-content {
@@ -308,12 +382,18 @@
     font-size: 44px;
     line-height: 40px;
     font-weight: 700;
+}
 
+.heading-3 {
+    font-size: 32px !important;
+}
+
+.heading-light {
+    font-weight: 500 !important;
+    line-height: 50px;
 }
 
 /* Payment Page  */
-
-
 .payment-container {
     display: flex;
     align-items: center;
@@ -322,7 +402,6 @@
 
     .payment-wrapper {
         position: relative;
-
 
         img {
             height: 569px;
